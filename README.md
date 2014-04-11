@@ -1,3 +1,7 @@
+"The self is not something ready-made,but something in continuous information through choice of action."
+
+-- John Dewey
+
 glowing-octo-sansa
 ==================
 
