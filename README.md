@@ -7,6 +7,8 @@ glowing-octo-sansa
 
 An common use,interchange-able(SWF,AIR,ipa,apk), Starling+FeatherUI+RobotLegs features, PlayIO/App42 game engine powered AS3 mobile project template.
 
+Currently POC live demo: http://www.lookbackon.com/lab/SET/Main.html
+
 Common Screens
 ==================
 
