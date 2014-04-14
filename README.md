@@ -39,3 +39,7 @@ Common GameEngine
 TBC
 
 Any more? Any fork and pull request are welcomed!
+
+Reference
+==================
+http://interactiveanimator.com/blog/?p=992
