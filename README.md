@@ -20,6 +20,12 @@ Common Screens
 
 ![Screenshot of "MainMenu Screen"](https://raw.githubusercontent.com/yangboz/glowing-octo-sansa/master/snapshots/Game_Main_Screen.jpg)
 
+###Help Screen:
+
+![Screenshot of "Help Screen"](https://raw.githubusercontent.com/yangboz/glowing-octo-sansa/master/snapshots/Game_Help_Screen.jpg)
+
+Tips:Starling share flash stage with external SWF, also have multiply stage instances.
+
 ###About Screen:
 
 ![Screenshot of "About Screen"](https://raw.githubusercontent.com/yangboz/glowing-octo-sansa/master/snapshots/Game_About_Screen.jpg)
