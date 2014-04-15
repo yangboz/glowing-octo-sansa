@@ -37,7 +37,7 @@ Tips:Starling share flash stage with external SWF, also have multiply stage inst
 Common Features
 ==================
 
-TBC
+ASDOC(asdoc.xml): http://htmlpreview.github.io/?https://github.com/yangboz/glowing-octo-sansa/blob/master/target/asdoc/index.html
 
 Common GameEngine
 ==================
