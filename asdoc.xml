@@ -1,0 +1,65 @@
+<project name="GODPAPER_ASDOC"
+		 basedir="."
+		 default="docs">
+	<property name="FLEX_HOME"
+			  value="C:\Software\FLEX\sdks\4.6.0"/>
+	<property name="OUTPUT_DIR" 
+			  value="${basedir}/target/asdoc"/>
+	<taskdef resource="flexTasks.tasks"
+			 classpath="${FLEX_HOME}/ant/lib/flexTasks.jar"/>
+	<property name="flexlib" location="${FLEX_HOME}/frameworks"/>
+	<!--
+		ASDOC the existing src folder and files and output ASDocuments
+	-->
+	
+	<target name="docs" depends="init">
+		<asdoc 
+			   window-title="Flash Action Script API Document"
+			   main-title="AS3+Starling+FeatherUI+RobotLegs"
+			   footer="Information on this site is by default visible to everyone within GODPAPER. Please ensure you apply appropriate access controls when posting GODPAPER Confidential information.Copyright © by GODPAPER. All material on this collaboration platform is the property of GODPAPER."
+			   output="${OUTPUT_DIR}" 
+			   failonerror="true"
+			   lenient="true"
+			   strict="false"
+			   report-invalid-styles-as-warnings="true"
+			   templates-path="${FLEX_HOME}\asdoc\templates"
+			   >
+			<!-- generate asdoc for all as/mxml files in the doc-sources -->
+			<doc-sources path-element="${basedir}/src/" />
+			<!-- source path for asdoc -->
+			<compiler.source-path path-element="${basedir}/src"/>
+			<!--
+			<exclude-sources path="${basedir}/src\exclude\" />
+			-->
+			
+			<external-library-path dir="libs">
+				<include name="*.swc" />
+			</external-library-path>
+			
+			<external-library-path dir="${flexlib}/libs">
+		    	<include name="*.swc" />
+		    </external-library-path>
+			
+			<external-library-path dir="${flexlib}/libs">
+				<include name="air/*.swc" />
+		    </external-library-path>
+			<!--
+				CONFIG:: based pre-compliler configuration here.
+			-->
+			<define name="CONFIG::DEV" value="false"/>
+			<define name="CONFIG::LOGGING" value="false"/>
+			
+		</asdoc>
+
+	</target>
+	<target name="clean">
+		<delete includeEmptyDirs="true" failonerror="false">
+			<fileset dir="${OUTPUT_DIR}" includes="**/*"/>
+		</delete>
+	</target>
+	
+	<target name="init" depends="clean">
+        <mkdir dir="${OUTPUT_DIR}" />
+    </target>
+	
+</project>
